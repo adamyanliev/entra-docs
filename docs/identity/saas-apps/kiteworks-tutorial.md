@@ -34,8 +34,8 @@ To configure the integration of Kiteworks into Microsoft Entra ID, you need to a
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Cloud Application Administrator](~/identity/role-based-access-control/permissions-reference.md#cloud-application-administrator).
 1. Browse to **Entra ID** > **Enterprise apps** > **New application**.
-1. In the **Add from the gallery** section, type **Kiteworks** in the search box.
-1. Select **Kiteworks** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
+1. In the **Browse Microsoft Entra App Gallery** section, type **Kiteworks** in the search box.
+1. Select **Kiteworks** from results panel and then click **Create** to add the app. Wait a few seconds while the app is added to your tenant.
 
  Alternatively, you can also use the [Enterprise App Configuration Wizard](https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration). In this wizard, you can add an application to your tenant, add users/groups to the app, assign roles, and walk through the SSO configuration as well. [Learn more about Microsoft 365 wizards.](/microsoft-365/admin/misc/azure-ad-setup-guides)
 
@@ -69,14 +69,14 @@ Follow these steps to enable Microsoft Entra SSO.
 
 1. On the **Basic SAML Configuration** section, perform the following steps:
 
-	a. In the **Sign on URL** text box, type a URL using the following pattern:
-    `https://<kiteworksURL>.kiteworks.com`
-
-    b. In the **Identifier (Entity ID)** text box, type a URL using the following pattern:
+	a. Under the **Identifier (Entity ID)**, click **Add Identifier** and type a URL using the following pattern:
     `https://<kiteworksURL>/sp/module.php/saml/sp/saml2-acs.php/sp-sso`
 
+
+    b. In the **Sign on URL** text box, type a URL using the following pattern:
+    `https://<kiteworksURL>.kiteworks.com`
 	> [!NOTE]
-	> These values aren't real. Update these values with the actual Sign on URL and Identifier. Contact [Kiteworks Client support team](https://accellion.com/support) to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section.
+	> These values aren't real. Update these values with the actual Sign on URL and Identifier. Contact [Kiteworks technical support]([https://accellion.com/support](https://community.kiteworks.com/)) to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section.
 
 1. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section,  find **Certificate (Base64)** and select **Download** to download the certificate and save it on your computer.
 
